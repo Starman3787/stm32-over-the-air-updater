@@ -53,6 +53,7 @@ C_SRC += ./timers/systick/systick_interrupt_handler.c
 C_SRC += ./timers/systick/systick.c
 C_SRC += ./util/delay/delay.c
 C_SRC += ./drivers/led/led.c
+C_SRC += ./drivers/uart/uart.c
 C_SRC += ./SystemInit.c
 C_SRC += ./bootloader/bootloader.c
 
