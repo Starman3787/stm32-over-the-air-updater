@@ -6,7 +6,7 @@ void init_led(void)
 {
     RCC->AHB4ENR |= RCC_AHB4ENR_GPIOEEN;
 
-    GPIOE->MODER = 0U;
+    GPIOE->MODER &= ~(0b11 << (1 * 2));
     GPIOE->MODER |= (0b01 << (1 * 2));
 }
 
